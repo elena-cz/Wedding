@@ -5,7 +5,7 @@
   <meta charset="utf-8"/>
   <link href="css/normalize.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300|Open+Sans+Condensed:300,700|Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300|Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="/js/script.js"></script>
 </head>
 <body>
@@ -16,91 +16,88 @@
 				<li><a href="/index.html">Home</a></li>
 				<li><a href="/rsvp.html">RSVP</a></li>
 				<li id="current"><a href="/details.html">Details</a></li>
-				<li><a href="/photos.html">Photos</a></li>
 			</ul>
 			<hr>	
 		</div>
 	
 		<div class="main">
-			<h2>Details</h2>
-			
-			<h3>Accordion collapse with rotating icon</h3>
-			    <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="true">
-			      <div class="panel">
-			        <div class="panel-heading" role="tab" id="headingOne">
-			          <h4 class="panel-title">
-			        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			          Collapsible item #1
-			        </a>
-			      </h4>
-			        </div>
-			        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-			          <div class="panel-body">
-			            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-			          </div>
-			        </div>
-			      </div>
-			      <!-- end of panel -->
+			<div class="accordion-bral">
 
-			      <div class="panel">
-			        <div class="panel-heading" role="tab" id="headingTwo">
-			          <h4 class="panel-title">
-			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			          Collapsible item #2
-			        </a>
-			      </h4>
-			        </div>
-			        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-			          <div class="panel-body">
-			            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-			          </div>
-			        </div>
-			      </div>
-			      <!-- end of panel -->
-
-			      <div class="panel">
-			        <div class="panel-heading" role="tab" id="headingThree">
-			          <h4 class="panel-title">
-			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			          Collapsible item #3
-			        </a>
-			      </h4>
-			        </div>
-			        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-			          <div class="panel-body">
-			            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-			          </div>
-			        </div>
-			      </div>
-			      <!-- end of panel -->
-
-			      <div class="panel">
-			        <div class="panel-heading" role="tab" id="headingFour">
-			          <h4 class="panel-title">
-			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-			          Collapsible item #4
-			        </a>
-			      </h4>
-			        </div>
-			        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-			          <div class="panel-body">
-			            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-			          </div>
-			        </div>
-			      </div>
-			      <!-- end of panel -->
-
+			  <div>
+			    <!-- accordion item 1 -- start -->
+			    <input class="ac-input" id="ac-1" name="accordion-1" type="checkbox" />
+			    <label class="ac-label" for="ac-1">Venue & Directions<i></i></label>
+			    <div class="article ac-content">
+					<h3>About the venue<h3>
+						<p>Gerry Ranch is a working farm growing lemons, avocados and blueberries. Standing in the wedding area, you're surrounded by the orchard with views of the foothills, valley, and fields.</p> 
+						
+					<h3>Getting there</h3>	
+						
+			      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13193.009951209418!2d-118.9457075!3d34.2421004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd6cb1cd1d06ec367!2sGerry+Ranch!5e0!3m2!1sen!2sus!4v1457910844728" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				  
+				  
 			    </div>
-			    <!-- end of #accordion -->
-			
-			
+			  </div>
+			  <!-- accordion item 1 -- end -->
+
+			  <div>
+  			    <!-- accordion item 2 -- start -->
+  			    <input class="ac-input" id="ac-2" name="accordion-1" type="checkbox" />
+  			    <label class="ac-label" for="ac-2">Schedule<i></i></label>
+  			    <div class="article ac-content">
+  			    	<ul class="schedule">
+					  <li><span class="time">4:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guests arrive</li>
+					  <li><span class="time">4:30</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ceremony starts</li>
+					  <li><span class="time">5:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cocktails</li>
+					  <li><span class="time">6:30</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dinner</li>
+					  <li><span class="time">7:30</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dancing</li>
+					  <li><span class="time">10:00</span>&nbsp;&nbsp;&nbsp;Venue closes</li>
+					  <li><span class="time">10:20</span>&nbsp;&nbsp;&nbsp;After party at the Czubiak house</li>
+					</ul>
+  			    </div>
+  			  </div>
+  			  <!-- accordion item 2 -- end -->
+				<div>
+				<!-- accordion item 3 -- start -->
+			    <input class="ac-input" id="ac-3" name="accordion-1" type="checkbox" />
+			    <label class="ac-label" for="ac-3">What to Wear<i></i></label>
+			    <div class="article ac-content">
+			      <p>Here are some image placeholders... aren't they lovely.</p>
+			    </div>
+			  </div>
+			  <!-- accordion item 3 -- end -->
+
+			  <div>
+			    <!-- accordion item 4 -- start -->
+			    <input class="ac-input" id="ac-4" name="accordion-1" type="checkbox" />
+			    <label class="ac-label" for="ac-4">Where to Stay<i></i></label>
+			    <div class="article ac-content">
+			      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+			        Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis...</p>
+			    </div>
+			  </div>
+			  <!-- accordion item 4 -- end -->
+
+			  <div>
+			    <!-- accordion item 5 -- start -->
+			    <input class="ac-input" id="ac-5" name="accordion-1" type="checkbox" />
+			    <label class="ac-label" for="ac-5">Registry<i></i></label>
+			    <div class="article ac-content">
+			      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam.</p>
+			      
+			    </div>
+			  </div>
+			  <!-- accordion item 5 -- end -->
+
+			</div>
 		</div>
 	
 		<!--Footer-->
 		<div class="footer">	
 			<h3>August 20, 2016 at 4:30pm</h3>
-			<p>9015 Rosita Rd<br/>
-				Camarillo, CA 93012</p>
+			<p><a href="https://www.google.com/maps/place/Gerry+Ranch/@34.2421004,-118.9457075,15z/data=!4m2!3m1!1s0x0:0xd6cb1cd1d06ec367">
+				9015 Rosita Rd<br/>
+				Camarillo, CA 93012</a></p>
 		</div>
 	</div>
 	

@@ -1,0 +1,352 @@
+$heading-font: 'Yanone Kaffeesatz', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+$grey: rgba(220, 231, 235, 1);
+$green: #3b9f87;
+
+/* ---------- All Pages -------------- */
+
+.container {
+	background: url("../images/header.png"), url("../images/footer.png");
+	background-position: top, bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 1000px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	margin: 15px auto;
+	min-height:1100px;
+	position:relative;
+
+}
+.header {
+	text-align: center;
+	padding: 100px 0px 40px 0px;
+	width: 55%;
+	margin: 0 auto;
+}
+	
+
+.header ul {
+    padding:0;
+    margin: 0 auto;
+}  
+  
+.header li { 
+  display: inline-block;
+  list-style: none;
+  padding: 0px 10px 0px 10px;
+	}
+
+.header a {
+    font-family: $heading-font;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: 200;
+	color: black;
+	text-transform: uppercase;
+  }
+
+.header a:visited {
+  	color: black;
+  }
+  
+.header a:hover {
+    	text-decoration: none;
+		color: #666666;
+    } 
+#current a {
+	font-weight: 300;
+}	 
+
+.main {
+	width: 70%;
+	margin: 0 auto;
+	padding-bottom: 220px;
+}
+
+h1 {
+	font-family: $heading-font;
+	font-weight: 300;
+	font-size: 60px;
+	text-transform: uppercase;
+	margin: 0px 0px 20px 0px;
+}	
+
+h2 {
+	font-family: $heading-font;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+h3 {
+	font-family: $body-font;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+p {
+	font-family: $body-font;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.schedule {
+	font-family: $body-font;
+	font-weight: 400;
+	font-size: 14px;
+	list-style: none;
+}
+
+.time {
+	font-weight: 600;
+}
+
+/* ---------- RSVP -------------- */
+
+#rsvp_form {
+	width: 610px;
+	height: 700px;
+	margin: 0 auto;
+}
+
+/* ---------- Footer -------------- */
+
+.footer {
+	text-align: center;
+	width: 50%;
+	height:100px;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 80px;
+	right: 0;
+	left: 0;
+	padding-top: 40px;
+
+}
+
+.footer h3 {
+	font-family: $heading-font;
+	font-weight: 300;
+	font-size: 20px;
+	margin: 0px 0px 5px 0px;
+}
+.footer p {
+	margin: 0px 0px 0px 0px;
+}
+
+.footer a {
+	color: black;
+	text-decoration: none;
+}
+
+.header a:visited {
+  	color: black;
+  }
+  
+.header a:hover {
+    	text-decoration: underline;
+	}
+		
+
+/* ---------- Accordion -------------- */
+
+.accordion-bral {
+  min-height: 0;
+  min-width: 220px;
+  width: 100%;
+  height: 100%;
+  margin: 0px!important;
+
+}
+.accordion-bral .ac-label {
+  font-family: $heading-font;
+  color: $green;
+  font-weight: 300;
+  padding: 5px 20px;
+  position: relative;
+  display: block;
+  height: auto;
+  cursor: pointer;
+  line-height: 33px;
+  font-size: 24px;
+  border-top: 1px dotted $grey;
+}
+.accordion-bral .ac-label:hover {
+
+}
+.accordion-bral input + .ac-label  {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.accordion-bral input:checked + .ac-label,
+.accordion-bral input:checked + .ac-label:active {
+  
+}
+.accordion-bral input.ac-input {
+  display: none;
+}
+.accordion-bral .article {
+  overflow: hidden;
+  height: 0px;
+  max-height: auto;
+  padding-left: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-bral input:checked ~ .article i {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.accordion-bral input:checked ~ .article.ac-content {
+  height: auto;
+}
+
+.accordion-bral i {
+  position: absolute;
+  transform: translate(-30px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+.accordion-bral input:checked ~ .ac-label i:before {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.accordion-bral input:checked ~ .ac-label i:after {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.accordion-bral i:before, .accordion-bral i:after {
+  content: "";
+  position: absolute;
+  background-color: $green;
+  width: 3px;
+  height: 9px;
+}
+.accordion-bral i:before {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+.accordion-bral i:after {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+/* ---------- Mobile -------------- */
+
+@media (max-width: 550px) {
+  .accordion-bral .ac-label {
+  	padding: 5px 20px;
+  	position: relative;
+  	display: block;
+  	height: auto;
+  	padding-right: 40px;
+  	cursor: pointer;
+  	line-height: 33px;
+  	font-size: 22px;
+	}
+  .accordion-bral i {
+  	position: absolute;
+  	transform: translate(-30px, 0);
+  	margin-top: 2%;
+  	right: 0;
+	}
+	
+	.container {
+		width: 95%;
+		margin: 10px auto;
+		min-height: 700px;
+
+	}
+	.header {
+		padding: 50px 0px 30px 0px;
+		width: 65%;
+		margin: 0 auto;
+	}
+	
+
+	.header ul {
+	    padding:0;
+	    margin: 0 auto;
+	}  
+  
+	.header li { 
+	  display: inline-block;
+	  list-style: none;
+	  padding: 0px 6px 0px 10px;
+		}
+
+	.header a {
+	    font-family: $heading-font;
+		font-size: 20px;
+		text-decoration: none;
+		font-weight: 200;
+		color: black;
+		text-transform: uppercase;
+	  }
+
+	.header a:visited {
+	  	color: black;
+	  }
+  
+	.header a:hover {
+	    	text-decoration: none;
+			color: #666666;
+	    } 
+	#current a {
+		font-weight: 300;
+	}	 
+
+	.main {
+		width: 90%;
+		margin: 0 auto;
+		padding-bottom: 160px;
+	}
+	h1 {
+		font-family: $heading-font;
+		font-size: 38px;
+		margin: 0px 0px 20px 0px;
+	}	
+
+	h2 {
+		font-family: $heading-font;
+		font-weight: 400;
+		font-size: 24px;
+	}
+
+	p {
+		font-family: $body-font;
+		font-weight: 400;
+		font-size: 14px;
+	}
+
+	/* ---------- Mobile RSVP -------------- */
+
+	#rsvp_form {
+		width: 100%;
+		height: 600px;
+	}
+
+	/* ---------- Mobile Footer -------------- */
+
+	.footer {
+		width: 50%;
+		height:100px;
+		bottom: 30px;
+		padding-top: 30px;
+
+	}
+
+	.footer h3 {
+		font-weight: 300;
+		font-size: 20px;
+		margin: 0px 0px 5px 0px;
+	}
+	.footer p {
+		margin: 0px 0px 0px 0px;
+	}	
+}
